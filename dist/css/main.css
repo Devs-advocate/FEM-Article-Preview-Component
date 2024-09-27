@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  font-size: 13px;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  background-color: white;
+  border-bottom: solid 1px hsl(210, 46%, 95%);
+  border-radius: 10px;
+  margin: 74px 24px 0 24px;
+  max-width: 730px;
+  max-height: 515px;
+}
+
+.main-image {
+  height: 30%;
+  margin-bottom: 2.25rem;
+}
+.main-image img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.information {
+  line-height: 1.5;
+  margin: 0 36px 0 33px;
+}
+
+.pitch {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 1rem;
+}
+
+.tips {
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.personal {
+  border: solid 1px green;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.personal .thumbnail-profile {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+.personal .personal-info {
+  line-height: 1.1;
+  align-self: center;
+}
+.personal .personal-info .profile-name {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 0.5rem;
+}
+.personal .personal-info .profile-date {
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+.personal .share-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-self: center;
+  margin-left: auto;
+  border: none;
+}
+
+.social-media-links {
+  height: 5rem;
+  background-color: hsl(217, 19%, 35%);
+  border: solid 1px red;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+.social-media-links .share {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 0.5rem;
+}
+.social-media-links .icon-group {
+  margin-right: 3.5rem;
+  margin-left: 0.75rem;
+}
+.social-media-links .icon-group svg {
+  margin: 0 6px 0 6px;
+}
+.social-media-links .share-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: hsl(212, 23%, 69%);
+}
+
+.off {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
