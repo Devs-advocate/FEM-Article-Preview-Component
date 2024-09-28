@@ -9,9 +9,13 @@ if (links.style.display === 'none') {
 }
 
 shareBtn1.addEventListener('click', toggleLinks);
-shareBtn2.addEventListener('click', toggleLinks);
+// shareBtn2.addEventListener('click', toggleLinks);
 
+// function toggleLinks() {
+//   personal.classList.toggle('off');
+//   links.classList.toggle('off');
+// }
 function toggleLinks() {
-  personal.classList.toggle('off');
+  // personal.classList.toggle('off');
   links.classList.toggle('off');
 }
