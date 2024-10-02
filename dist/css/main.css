@@ -20,6 +20,9 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: hsl(210, 46%, 95%);
 }
@@ -29,9 +32,9 @@ body {
   background-color: white;
   border-bottom: solid 1px hsl(210, 46%, 95%);
   border-radius: 10px;
-  margin: 70px 24px 0 24px;
+  margin: auto 6.5%;
   max-width: 730px;
-  max-height: 615px;
+  max-height: 645px;
 }
 
 .main-image {
@@ -39,6 +42,7 @@ body {
   margin-bottom: 2.25rem;
 }
 .main-image img {
+  display: block;
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: auto;
@@ -65,6 +69,7 @@ body {
 .personal {
   display: flex;
   align-items: center;
+  position: static;
   position: absolute;
   width: 80%;
   height: 5rem;
@@ -133,15 +138,79 @@ body {
 .social-media-links .icon-group svg {
   margin: 0 6px 0 6px;
 }
-.social-media-links .share-btn {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: none;
-  color: white;
-  background-color: hsl(212, 23%, 69%);
-}
 
 .off {
   display: none;
+}
+
+@media (min-width: 850px) {
+  .container {
+    display: flex;
+    margin: auto;
+  }
+  .main-image {
+    max-width: 285px;
+    height: 100%;
+    margin-bottom: 0rem;
+  }
+  .main-image img {
+    border-radius: 10px 0 0 10px;
+  }
+  .information {
+    max-width: 375px;
+    margin-top: 4%;
+  }
+  .information .pitch {
+    font-size: 1.65rem;
+    line-height: 1.4;
+  }
+  .personal {
+    position: absolute;
+    width: 50%;
+    height: 5rem;
+    left: 285px;
+    bottom: 0;
+    margin-left: 33px;
+    align-items: flex-start;
+  }
+  .personal .personal-info {
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+  .personal .btn-section {
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+  .social-media-links {
+    width: 34%;
+    height: 4rem;
+    left: 542px;
+    bottom: 95px;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .social-media-links .share {
+    letter-spacing: 0.35rem;
+    margin-left: 15%;
+  }
+  .social-media-links .icon-group {
+    margin-right: 2rem;
+    margin-left: 0.75rem;
+  }
+  .social-media-links .icon-group svg {
+    margin: 0 6px 0 6px;
+  }
+  .social-media-links::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .btn-section {
+    color: white;
+  }
 }/*# sourceMappingURL=main.css.map */
